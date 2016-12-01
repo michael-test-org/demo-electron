@@ -4,7 +4,8 @@
   "main": "main.js",
   "devDependencies": {
     "electron": "^1.4.10",
-    "electron-builder": "^10.4.1"
+    "electron-builder": "^10.4.1",
+    "eslint": "^3.11.1"
   },
   "description": "SysAdvent",
   "author": "Michael Heap <m@michaelheap.com>",
@@ -14,10 +15,11 @@
     "category": "app.category.type"
   },
   "scripts": {
-      "start": "electron main.js",
-      "build": "build --mwl --x64 --ia32",
-      "build-windows": "build --windows --x64 --ia32",
-      "build-mac": "build --mac --x64 --ia32",
-      "build-linux": "build --linux --x64 --ia32"
+    "start": "electron main.js",
+    "lint": "eslint *.js",
+    "build": "build --mwl --x64 --ia32",
+    "build-windows": "build --windows --x64 --ia32",
+    "build-mac": "build --mac --x64 --ia32",
+    "build-linux": "build --linux --x64 --ia32"
   }
 }
